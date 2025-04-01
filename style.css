@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    text-align: center;
+}
+
+h1 {
+    color: #4CAF50;
+}
+
+#game-log {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    height: 200px;
+    overflow-y: auto;
+}
+
+#battle-field {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #eee;
+    margin-bottom: 20px;
+}
+
+.hand {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.card {
+    width: 100px;
+    height: 150px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.card:hover {
+    background-color: #e7f7d8;
+}
+
+#energy-status, #deck-status {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.animation {
+    font-size: 30px;
+    animation: explode 1s ease-in-out;
+}
+
+@keyframes explode {
+    0% { transform: scale(1); opacity: 1; }
+    100% { transform: scale(2); opacity: 0; }
+}
